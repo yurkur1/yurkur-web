@@ -1208,6 +1208,11 @@ body.menu-open {
 }
 
 @media (max-width: 1023px) {
+
+    .menu-toggle:focus-visible {
+        outline: none;
+    }
+    
     .page-music .brand-page {
         transform: translateY(-2px);
     }
