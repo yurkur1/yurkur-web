@@ -7,6 +7,7 @@
   <meta name="description" content="Game reviews and opinions by yurkur.">
   <title>yurkur | gaming</title>
   <link rel="preload" href="assets/fonts/special-gothic-expanded-one.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('page-loading');</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/red-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/red-32.png">
@@ -15,18 +16,21 @@
 </head>
 
 <body class="page-gaming" id="gaming">
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <img src="assets/logo-red.webp" width="154" height="35" alt="yurkur" decoding="sync">
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <a class="brand" href="index.html" aria-label="yurkur — Home">
     <img src="assets/logo-red.webp" width="104" height="24" alt="yurkur">
     <span class="brand-page" aria-hidden="true">gaming</span>
   </a>
   <header class="header">
-    <div class="header-glass" aria-hidden="true"></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation"
       aria-expanded="false" hidden>
       <span class="menu-icon icon-menu-arrow" aria-hidden="true"></span>
     </button>
     <nav class="desktop-nav" aria-label="Main desktop navigation">
+      <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon" aria-hidden="true"></span></a>
       <a href="webdesign.html">webdesign</a>
       <a href="music.html">music</a>
       <a href="gaming.html" aria-current="page">gaming</a>
@@ -36,6 +40,8 @@
   <dialog class="menu" id="navigation" aria-label="Main navigation">
     <div class="menu-panel">
       <nav aria-label="Main">
+        <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon"
+            aria-hidden="true"></span></a>
         <a href="webdesign.html">webdesign</a>
         <a href="music.html">music</a>
         <a href="gaming.html" aria-current="page">gaming</a>
@@ -56,18 +62,14 @@
           long as I can remember. Nothing makes
           me happier than sitting down with a
           new game and just being transported into
-          its world. It's a nice escape for a few hours.</p>
-        <p>I used to play CS2 a lot, but nowadays
-          competitive games just aren’t my speed.
-          Single-player games with a good story
-          or just a fun gameplay idea are my thing.</p>
-        <img class="intro-photo" src="assets/gaming-photo.webp" width="1200" height="973" alt="Crash Bandicoot"
-          loading="lazy" decoding="async">
+          its world. It's a fun escape for a few hours.</p>
         <p>So, to make something out of my time
           with these games, I decided to write
-          about them. Think of these as reviews.
-          Heavily opinionated reviews, but that’s
-          the point, right?</p>
+          about them (to the best of my ability).
+          Think of these as opinion pieces on
+          gameplay aspects and curiosities.</p>
+        <img class="intro-photo" src="assets/gaming-photo.webp" width="1200" height="973" alt="Crash Bandicoot"
+          loading="lazy" decoding="async">
         <p>Reviews are listed in the order I played
           the games, from newest to oldest.</p>
       </div>
@@ -95,11 +97,11 @@
     </div>
     <section class="links-section gaming-links" aria-label="Gaming profiles">
       <ul class="social-links">
-        <li><a href="https://www.youtube.com/@yurkur" target="_blank" rel="noopener noreferrer"
-            aria-label="YouTube: yurkur (opens in a new tab)"><span class="social-icon icon-youtube"
-              aria-hidden="true"></span><span>yurkur</span></a></li>
         <li><a href="https://steamcommunity.com/id/yurkur" target="_blank" rel="noopener noreferrer"
             aria-label="Steam: yurkur (opens in a new tab)"><span class="social-icon icon-steam"
+              aria-hidden="true"></span><span>yurkur</span></a></li>
+        <li><a href="https://www.youtube.com/@yurkur" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube: yurkur (opens in a new tab)"><span class="social-icon icon-youtube"
               aria-hidden="true"></span><span>yurkur</span></a></li>
         <li><a href="https://discord.com/users/459400616897413120" target="_blank" rel="noopener noreferrer"
             aria-label="Discord: yurkur.exe (opens in a new tab)"><span class="social-icon icon-discord"

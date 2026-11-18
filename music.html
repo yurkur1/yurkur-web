@@ -7,6 +7,7 @@
   <meta name="description" content="yurkur — cloud rap, psychedelic trap beats and music from existence / XST.">
   <title>yurkur | music</title>
   <link rel="preload" href="assets/fonts/special-gothic-expanded-one.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('page-loading');</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/green-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/green-32.png">
@@ -15,18 +16,21 @@
 </head>
 
 <body class="page-music" id="music">
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <img src="assets/logo-green.webp" width="154" height="35" alt="yurkur" decoding="sync">
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <a class="brand" href="index.html" aria-label="yurkur — Home">
     <img src="assets/logo-green.webp" width="104" height="24" alt="yurkur">
     <span class="brand-page" aria-hidden="true">music</span>
   </a>
   <header class="header">
-    <div class="header-glass" aria-hidden="true"></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation"
       aria-expanded="false" hidden>
       <span class="menu-icon icon-menu-arrow" aria-hidden="true"></span>
     </button>
     <nav class="desktop-nav" aria-label="Main desktop navigation">
+      <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon" aria-hidden="true"></span></a>
       <a href="webdesign.html">webdesign</a>
       <a href="music.html" aria-current="page">music</a>
       <a href="gaming.html">gaming</a>
@@ -36,6 +40,8 @@
   <dialog class="menu" id="navigation" aria-label="Main navigation">
     <div class="menu-panel">
       <nav aria-label="Main">
+        <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon"
+            aria-hidden="true"></span></a>
         <a href="webdesign.html">webdesign</a>
         <a href="music.html" aria-current="page">music</a>
         <a href="gaming.html">gaming</a>
@@ -53,15 +59,20 @@
           <br>and you can hear it.
         </h1>
       </div>
-      <div class="biography">
+      <div class="biography biography--with-photo">
         <p>Beatmaker first, rapper second.<br>
-          "Simple" and "catchy" are two mantras I try to keep in mind anytime I'm producing.</p>
+          "Simple" and "catchy" are two mantras<br>
+          I try to keep in mind whenever I'm producing.
+          Influenced by the ATL sound, my beats are
+          modern and nostalgic at the same time.</p>
         <p>I'm also one half of a music collective
           called existence, or XST for short.
           You can listen to the whole catalog on
           our website <a class="music-inline-link" href="https://xstrecords.cz" target="_blank"
             rel="noopener noreferrer">xstrecords.cz</a>. All my music work is available on <a class="music-inline-link"
-            href="https://soundcloud.com/xstyurkur" target="_blank" rel="noopener noreferrer">Soundcloud</a>.</p>
+            href="https://soundcloud.com/xstyurkur" target="_blank" rel="noopener noreferrer">SoundCloud</a>.</p>
+        <img class="intro-photo" src="assets/music-photo.webp" width="1200" height="973"
+          alt="yurkur standing in front of a garage door" loading="lazy" decoding="async">
         <ul class="social-links music-intro-links">
           <li><a href="https://xstrecords.cz" target="_blank" rel="noopener noreferrer"
               aria-label="xstrecords.cz (opens in a new tab)"><span class="social-icon icon-music"
@@ -72,8 +83,6 @@
         </ul>
       </div>
     </section>
-    <img class="intro-photo" src="assets/music-photo.webp" width="1200" height="973"
-      alt="yurkur standing in front of a garage door" loading="lazy" decoding="async">
     <section class="media-section" aria-label="Selected songs">
       <p class="media-description">Below are few songs from my discography. Be aware that all lyrics are in
         Czech.</p>

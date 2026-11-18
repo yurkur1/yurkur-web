@@ -7,6 +7,7 @@
   <meta name="description" content="Music, gaming and everything in between — videos and editing by yurkur.">
   <title>yurkur | videos</title>
   <link rel="preload" href="assets/fonts/special-gothic-expanded-one.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('page-loading');</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/purple-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/purple-32.png">
@@ -15,18 +16,21 @@
 </head>
 
 <body class="page-videos" id="videos">
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <img src="assets/logo-purple.webp" width="154" height="35" alt="yurkur" decoding="sync">
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <a class="brand" href="index.html" aria-label="yurkur — Home">
     <img src="assets/logo-purple.webp" width="104" height="24" alt="yurkur">
     <span class="brand-page" aria-hidden="true">videos</span>
   </a>
   <header class="header">
-    <div class="header-glass" aria-hidden="true"></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation"
       aria-expanded="false" hidden>
       <span class="menu-icon icon-menu-arrow" aria-hidden="true"></span>
     </button>
     <nav class="desktop-nav" aria-label="Main desktop navigation">
+      <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon" aria-hidden="true"></span></a>
       <a href="webdesign.html">webdesign</a>
       <a href="music.html">music</a>
       <a href="gaming.html">gaming</a>
@@ -36,6 +40,8 @@
   <dialog class="menu" id="navigation" aria-label="Main navigation">
     <div class="menu-panel">
       <nav aria-label="Main">
+        <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon"
+            aria-hidden="true"></span></a>
         <a href="webdesign.html">webdesign</a>
         <a href="music.html">music</a>
         <a href="gaming.html">gaming</a>
@@ -48,22 +54,31 @@
       <div class="hero video-panel">
         <video class="background-video" data-file="assets/video/home-5.mp4" autoplay loop muted playsinline
           preload="none" aria-hidden="true" tabindex="-1"></video>
-        <h1>Music, gaming and everything<br class="videos-line">in between, all in one place.<br>Here.</h1>
+        <h1>Short-form content,<br class="videos-line">
+          hours-long video essays<br class="videos-line">
+          and everything in between.
+        </h1>
       </div>
       <div class="biography biography--with-photo">
-        <p>Using Vegas Pro (I really should make some time to learn Premier...), montages or music videos are no
-          problem.</p>
-        <p>There is a channel with videos from my CS2 days. I had a blast making those.</p>
-        <p>Music needs videos and visuals. You can find my work on XST channel as well.</p>
+        <p>I can process long-form content like VODs
+          or podcast captures into TikTok videos or
+          Instagram Reels. Longer montages and
+          compilations are also my field of expertise.
+          Doesn't matter if it's Youtube, TikTok,
+          or some niche platform, I'm going to get it
+          done.</p>
+        <p>Like anything else, music needs visuals
+          and marketing. I'm responsible for most of
+          the videos of our music collective, XST.</p>
         <img class="intro-photo" src="assets/videos-photo.webp" width="1200" height="973" alt="" loading="lazy"
           decoding="async">
         <ul class="social-links videos-channel-links">
           <li><a href="https://www.youtube.com/@yurkur" target="_blank" rel="noopener noreferrer"
               aria-label="YouTube: yurkur (opens in a new tab)"><span class="social-icon icon-youtube"
                 aria-hidden="true"></span><span>yurkur</span></a></li>
-          <li><a href="https://www.youtube.com/channel/UCYzwCjdxyBgyAcZ2vxhVWIw" target="_blank"
-              rel="noopener noreferrer" aria-label="YouTube: existence (opens in a new tab)"><span
-                class="social-icon icon-youtube" role="img" aria-label="YouTube"></span><span>existence</span></a></li>
+          <li><a href="https://www.youtube.com/@existencebtw" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube: existence (opens in a new tab)"><span class="social-icon icon-youtube"
+                role="img" aria-label="YouTube"></span><span>existence</span></a></li>
         </ul>
       </div>
     </section>
@@ -72,13 +87,12 @@
         music.</p>
       <div class="media-list">
         <figure class="media-item">
-          <div class="media-player" data-youtube-id="5lUZJez7G2I" role="group" aria-label="CS2 Video #5 — video"></div>
+          <div class="media-player" data-youtube-id="5lUZJez7G2I" role="group" aria-label="CS2 Video #3 — video"></div>
           <figcaption><span>CS2 Video #3</span></figcaption>
         </figure>
         <figure class="media-item">
-          <div class="media-player" data-youtube-id="qxdf9yZRa7U" role="group"
-            aria-label="Level Up (feat. MukL) — video"></div>
-          <figcaption><span>Level Up Music Video</span></figcaption>
+          <div class="media-player" data-youtube-id="J2vuhFwgQq4" role="group" aria-label="SRT Demon Visualizer — video"></div>
+          <figcaption><span>SRT Demon Visual</span></figcaption>
         </figure>
       </div>
     </section>

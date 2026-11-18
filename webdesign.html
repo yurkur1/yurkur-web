@@ -7,6 +7,7 @@
   <meta name="description" content="Clean, vibrant and responsive websites by yurkur.">
   <title>yurkur | webdesign</title>
   <link rel="preload" href="assets/fonts/special-gothic-expanded-one.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('page-loading');</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/blue-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/blue-32.png">
@@ -15,18 +16,21 @@
 </head>
 
 <body class="page-webdesign" id="webdesign">
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <img src="assets/logo-blue.webp" width="154" height="35" alt="yurkur" decoding="sync">
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <a class="brand" href="index.html" aria-label="yurkur — Home">
     <img src="assets/logo-blue.webp" width="104" height="24" alt="yurkur">
     <span class="brand-page" aria-hidden="true">webdesign</span>
   </a>
   <header class="header">
-    <div class="header-glass" aria-hidden="true"></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation"
       aria-expanded="false" hidden>
       <span class="menu-icon icon-menu-arrow" aria-hidden="true"></span>
     </button>
     <nav class="desktop-nav" aria-label="Main desktop navigation">
+      <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon" aria-hidden="true"></span></a>
       <a href="webdesign.html" aria-current="page">webdesign</a>
       <a href="music.html">music</a>
       <a href="gaming.html">gaming</a>
@@ -36,6 +40,8 @@
   <dialog class="menu" id="navigation" aria-label="Main navigation">
     <div class="menu-panel">
       <nav aria-label="Main">
+        <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon"
+            aria-hidden="true"></span></a>
         <a href="webdesign.html" aria-current="page">webdesign</a>
         <a href="music.html">music</a>
         <a href="gaming.html">gaming</a>
@@ -48,18 +54,20 @@
       <div class="hero video-panel">
         <video class="background-video" data-file="assets/video/home-3.mp4" autoplay loop muted playsinline
           preload="none" aria-hidden="true" tabindex="-1"></video>
-        <h1>No overwhelming walls<br>of text. No dull looks.<br>Vibrant and responsive.</h1>
+        <h1>No confusing layers<br>of menus. No daunting<br>
+          walls of text.</h1>
       </div>
       <div class="biography biography--with-photo">
-        <p>The websites I build are clean and uncluttered, but they still pop.
-          Everybody hates confusing layers of menus and unclear navigation.
-          My websites make it easy to get where you want to go.</p>
-        <p>I use AI to generate code, but not to create images or logos. Don’t expect generic,
-          auto-gen slop. I go through the code and make adjustments by hand. All visual assets
-          are my own work, too.</p>
+        <p>I build simple and clean websites that don't confuse you.
+           If you want to quickly and effectively show a potential
+           customer what you do, look no further.</p>
+        <p>I use AI to generate code, but not to design the layouts
+          themselves or create images. Don’t expect prompt-generated
+          slop. I go through the code and make adjustments by hand.
+          All visual assets like logos and images are my own work, too.</p>
         <img class="intro-photo" src="assets/webdesign-photo.webp" width="1200" height="973"
           alt="Penpot Layout Concepting" loading="lazy" decoding="async">
-        <p>If you like what you see here and need a website of your own, feel free to
+        <p>If you like what you see here and need a website for your business, feel free to
           contact me via <a class="webdesign-inline-link" href="https://www.instagram.com/yurkur.exe/" target="_blank"
             rel="noopener noreferrer">Instagram</a> or
           <a class="webdesign-inline-link" href="mailto:jurkur44@gmail.com">email</a>.
