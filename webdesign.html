@@ -7,6 +7,7 @@
   <meta name="description" content="Clean, vibrant and responsive websites by yurkur.">
   <title>yurkur | webdesign</title>
   <link rel="preload" href="assets/fonts/special-gothic-expanded-one.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('page-loading');</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/blue-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/blue-32.png">
@@ -15,18 +16,21 @@
 </head>
 
 <body class="page-webdesign" id="webdesign">
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <img src="assets/logo-blue.webp" width="154" height="35" alt="yurkur" decoding="sync">
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
   <a class="brand" href="index.html" aria-label="yurkur — Home">
     <img src="assets/logo-blue.webp" width="104" height="24" alt="yurkur">
     <span class="brand-page" aria-hidden="true">webdesign</span>
   </a>
   <header class="header">
-    <div class="header-glass" aria-hidden="true"></div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation"
       aria-expanded="false" hidden>
       <span class="menu-icon icon-menu-arrow" aria-hidden="true"></span>
     </button>
     <nav class="desktop-nav" aria-label="Main desktop navigation">
+      <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon" aria-hidden="true"></span></a>
       <a href="webdesign.html" aria-current="page">webdesign</a>
       <a href="music.html">music</a>
       <a href="gaming.html">gaming</a>
@@ -36,6 +40,8 @@
   <dialog class="menu" id="navigation" aria-label="Main navigation">
     <div class="menu-panel">
       <nav aria-label="Main">
+        <a href="index.html" class="nav-home" aria-label="Home"><span class="nav-home-icon"
+            aria-hidden="true"></span></a>
         <a href="webdesign.html" aria-current="page">webdesign</a>
         <a href="music.html">music</a>
         <a href="gaming.html">gaming</a>
